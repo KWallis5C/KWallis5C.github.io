@@ -15,7 +15,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 400px; /* <--- Change me! */
+			left: 0px; /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -76,12 +76,12 @@
 				positionX = positionX + speed;
 				moveBoxTo(positionX);
 
-				if (positionX>boardWidth){
-					speed = speed * -1;
+				if (positionX > boardWidth){
+					speed = speed*-1;
 
 				}
 				
-				if (positionX< 0) {
+				if (positionX < 0) {
 					speed = speed * -1;
 				}
 
@@ -97,10 +97,10 @@
 				points = points + 1;
 				speed = speed + 3;		
 				changeBoxText (points);
-				If (speed > 0) {
+				if (speed > 0) {
 					speed = speed + 3;
 				}
-				elseif (speed < 0) { 
+				else if (speed < 0) { 
 					speed = speed -3;
 				}
 
